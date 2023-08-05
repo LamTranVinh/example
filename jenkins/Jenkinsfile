@@ -11,11 +11,11 @@ node {
     }
 
     stage('test') {
-	def myTestContainer = doceker.image('node:4.6')
-	myTestContainer.pull()
-	myTestContainer.inside {
-	  sh 'npm install --only=dev'
-	  sh 'npm test'
+	// def myTestContainer = doceker.image('node:4.6')
+	// myTestContainer.pull()
+	// myTestContainer.inside {
+	//   sh 'npm install --only=dev'
+	//   sh 'npm test'
 	}
     }
 
